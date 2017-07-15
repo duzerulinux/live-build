@@ -51,14 +51,21 @@ echo “d-i grub-installer/only_debian boolean true” >> config/includes.instal
 echo “popularity-contest popularity-contest/participate boolean false” >> config/includes.installer/preseed.cfg
 #→ desabilitar concurso de popularidade de pacotes
 
+# Não crie uma conta root (usuário normal uso sudo).
+#d-i passwd/root-login boolean false
+
+
+
 #################### repositories #####################
 #directory config/archives/
 #
-#Repositórios adicionais que irão para /etc/apt/sources.list.d:
-echo deb http://universe.duzeru.org/tatu stable main > config/archives/duzeru.list
+#Repositórios adicionais que irão para /etc/apt/sources.list.d são acrescentados com *.list
+#Repositórios que rodaram somente em live são acrescentados com .list.chroot
+#Repositórios adicionados no arquivo sources.list devem ser acrescentados com .list.binary
+echo deb http://universe.duzeru.org/tatu stable main > config/archives/duzeru.list.binary
 #Deve ser colocado a chave gpg:
 wget http://universe.duzeru.org/duzeru.gpg.key
-mv duzeru.gpg.key config/archives/duzeru.key
+mv duzeru.gpg.key config/archives/duzeru.key.binary
 
 #################### hierarchy of system #####################
 #directory config/includes.chroot
