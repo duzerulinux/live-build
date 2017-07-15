@@ -24,13 +24,17 @@ lb config --interactive shell # → faz com que fique em live antes de gerar a I
 lb config --archive-areas "main contrib non-free" # → habilita os componentes
 lb config --bootappend-live "boot=live components username=dzlive" # → trocar username
 
-#################### packages #####################
+#################### packages list installer #####################
 #directory config/package-lists/desktop.list.chroot
 #
 #COM O FINAL .chroot SÃO REMOVIDAS APÓS A INSTALAÇÃO DO MODO LIVE
 echo xfce4 > config/package-lists/desktop.list.chroot # → cria a lista para instalar programas e add xfce
 grub-efi-amd64 # → grub para modo-efi
 debian-installer-launcher # → Adicionar atalho do instalador na área de trabalho live 
+
+#################### packages installed .deb in mode off #####################
+#locate config/packages
+#O diretório que permite que pacotes de terceiros sejam instalados sem repositório
 
 #################### configurations installer debian #####################
 #directory config/includes.installer/usr/share/graphics/
@@ -53,7 +57,6 @@ echo “popularity-contest popularity-contest/participate boolean false” >> co
 
 # Não crie uma conta root (usuário normal uso sudo).
 #d-i passwd/root-login boolean false
-
 
 
 #################### repositories #####################
