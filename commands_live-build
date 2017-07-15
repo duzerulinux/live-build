@@ -1,0 +1,79 @@
+#Instalação dos pacotes necessários:
+apt-get install live-build live-manual live-config schroot
+
+# Sempre tem que está como usuário root para o procedimento;
+#As configurações descritas aqui geralmente vão sempre para os arquivos do diretório “config”;
+#Pacotes baixados após executar o comando lb build para gerar a ISO serão acrescentados num diretório chamado “cache”, assim não necessita baixar novamente;
+#Quando for gerar outra ISO, deve ser limpo o projeto anterior com o comando “lb clean”
+
+#################### live-build global #####################
+mkdir live 
+cd live
+lb config # → cria os diretórios padrões
+lb clean  # → Limpa o projeto para gerar outra ISO.
+
+lb config --debian-installer-gui true # → instalador gráfico habilitado
+lb config --debian-installer live # → instalador em modo texto habilitado
+echo xfce4 > config/package-lists/desktop.list.chroot # → cria a lista para instalar programas e add xfce
+echo grub-efi-amd64 >> config/package-lists/desktop.list.chroot # → grub para modo-efi
+lb config --bootloaders grub-efi  # → ativa o EFI
+lb config --image-name dz3 # → nome destinado a geração da ISO
+lb config --iso-application "duzerulinux"
+lb config --iso-volume "duzerulinux"
+lb config --interactive shell # → faz com que fique em live antes de gerar a ISO
+lb config --archive-areas "main contrib non-free" # → habilita os componentes
+lb config --bootappend-live "boot=live components username=dzlive" # → trocar username
+
+#################### packages #####################
+#directory config/package-lists/desktop.list.chroot
+#
+#COM O FINAL .chroot SÃO REMOVIDAS APÓS A INSTALAÇÃO DO MODO LIVE
+echo xfce4 > config/package-lists/desktop.list.chroot # → cria a lista para instalar programas e add xfce
+grub-efi-amd64 # → grub para modo-efi
+debian-installer-launcher # → Adicionar atalho do instalador na área de trabalho live 
+
+#################### configurations installer debian #####################
+#directory config/includes.installer/usr/share/graphics/
+#
+#alterar imagem do instalador
+#config/includes.installer/usr/share/graphics/logo_debian.png 
+#config/includes.installer/usr/share/graphics/logo_debian_dark.png 
+#config/includes.installer/usr/share/graphics/logo_installer.png 
+#config/includes.installer/usr/share/graphics/logo_installer_dark.png
+echo d-i apt-setup/no_mirror boolean true >> config/includes.installer/preseed.cfg → Desabilitar usar um espelho de rede no instalador.
+
+echo “d-i apt-setup/use_mirror boolean false” >> config/includes.installer/preseed.cfg 
+#→ Desabilitar usar um espelho de rede no instalador.
+
+echo “d-i grub-installer/only_debian boolean true” >> config/includes.installer/preseed.cfg
+#→ Faz o grub instalar automaticamente se nenhum outro sistema operacional for detectado na máquina.
+
+echo “popularity-contest popularity-contest/participate boolean false” >> config/includes.installer/preseed.cfg
+#→ desabilitar concurso de popularidade de pacotes
+
+#################### repositories #####################
+#directory config/archives/
+#
+#Repositórios adicionais que irão para /etc/apt/sources.list.d:
+echo deb http://universe.duzeru.org/tatu stable main > config/archives/duzeru.list
+#Deve ser colocado a chave gpg:
+wget http://universe.duzeru.org/duzeru.gpg.key
+mv duzeru.gpg.key config/archives/duzeru.key
+
+#################### hierarchy of system #####################
+#directory config/includes.chroot
+#
+#Pode ser acrescentado qualquer coisa de acordo com a hierarquia do sistema ex: criar um script teste.sh e adiciona-lo em config.includes.chroot/bin/teste.sh
+
+#################### grub live mode #####################
+#directory config/include.chroot
+#
+#Foi criado uma imagem 640x480px para menu GRUB live em:
+#config/includes.binary/boot/grub/splash.png #https://github.com/duzerulinux/live-build/blob/master/splash.png
+#Para editar o grub com multi linguagem, deve ser gerado a ISO, pegar oarquivo grub.cfg e edita-lo em:
+#config/includes.binary/boot/grub/grub.cfg
+# ex: pt_br --bootappend-live "boot=live components username=dzlive locales=pt_BR.UTF-8
+#Foi criado um arquivo para personalizar o layout do menu GRUB live em:
+#config/includes.binary/boot/grub/live-theme #https://github.com/duzerulinux/live-build/blob/master/theme-txt
+
+
