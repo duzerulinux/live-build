@@ -1,6 +1,6 @@
 # GRUB2 gfxmenu Linux Deepin theme
 # Designed for any resolution
-
+#this archive insert: config/includes.binary/boot/grub/live-theme
 # Global Property
 title-text: ""
 desktop-image: "../splash.png"
