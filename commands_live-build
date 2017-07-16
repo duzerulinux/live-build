@@ -58,6 +58,27 @@ echo “popularity-contest popularity-contest/participate boolean false” >> co
 # Não crie uma conta root (usuário normal uso sudo).
 #d-i passwd/root-login boolean false
 
+# Não crie uma conta de usuário normal
+#d-i passwd/make-user boolean false
+
+# Atualizar pacotes instalados na instalação
+#d-i pkgsel/upgrade select full-upgrade
+
+# Desativar repositórios de fontesdeb-src
+#d-i apt-setup/enable-source-repositories boolean false
+
+#Desabilitar as entradas de CDROM após a instalação
+#d-i apt-setup/disable-cdrom-entries boolean true
+
+#Dabilitar contrib e non-free
+#d-i apt-setup/non-free boolean true
+#d-i apt-setup/contrib boolean true
+
+#Desabilitar security, volatile and backports
+#d-i apt-setup/services-select multiselect
+
+
+
 
 #################### repositories #####################
 #directory config/archives/
