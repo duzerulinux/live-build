@@ -44,7 +44,6 @@ debian-installer-launcher # → Adicionar atalho do instalador na área de traba
 #config/includes.installer/usr/share/graphics/logo_debian_dark.png 
 #config/includes.installer/usr/share/graphics/logo_installer.png 
 #config/includes.installer/usr/share/graphics/logo_installer_dark.png
-echo d-i apt-setup/no_mirror boolean true >> config/includes.installer/preseed.cfg → Desabilitar usar um espelho de rede no instalador.
 
 echo “d-i apt-setup/use_mirror boolean false” >> config/includes.installer/preseed.cfg 
 #→ Desabilitar usar um espelho de rede no instalador.
