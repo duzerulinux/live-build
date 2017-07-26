@@ -10,19 +10,19 @@ LB_APT_INDICES="true"
 
 # $LB_BOOTAPPEND_LIVE: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_LIVE="boot=live components username=dzlive"
+LB_BOOTAPPEND_LIVE="boot=live components username=dzlive locales=en_US.UTF-8, pt_BR.UTF-8"
 
 # $LB_BOOTAPPEND_INSTALL: set boot parameters
 # (Default: empty)
-LB_BOOTAPPEND_INSTALL=""
+LB_BOOTAPPEND_INSTALL="boot=live components username=dzlive locales=pt_BR.UTF-8"
 
 # $LB_BOOTAPPEND_LIVE_FAILSAFE: set boot parameters
 # (Default: empty)
 LB_BOOTAPPEND_LIVE_FAILSAFE="boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal"
 
 # $LB_BOOTLOADERS: set bootloaders
-# (Default: syslinux,grub-efi)
-LB_BOOTLOADERS="syslinux,grub-efi"
+# (Default: grub-efi)
+LB_BOOTLOADERS="grub-efi"
 
 # $LB_CHECKSUMS: set checksums
 # (Default: md5)
@@ -82,8 +82,8 @@ LB_ISO_APPLICATION="duzerulinux"
 LB_ISO_PREPARER="live-build 1:20170213; http://live-systems.org/devel/live-build"
 
 # $LB_ISO_PUBLISHER: set iso publisher
-# (Default: duzerulinux)
-LB_ISO_PUBLISHER="duzerulinux"
+# (Default: Live Systems project; http://live-systems.org/; debian-live@lists.debian.org)
+LB_ISO_PUBLISHER="Live Systems project; http://live-systems.org/; debian-live@lists.debian.org"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
 # (Default: duzerulinux)
