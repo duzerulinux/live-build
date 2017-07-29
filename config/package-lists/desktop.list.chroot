@@ -2,6 +2,7 @@ grub-efi-amd64
 debian-installer-launcher
 mate-terminal
 gdebi
+mate-calc
 caja
 caja-open-terminal
 caja-gksu
