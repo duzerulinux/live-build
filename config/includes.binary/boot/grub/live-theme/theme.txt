@@ -1,40 +1,96 @@
-# GRUB2 gfxmenu Linux Deepin theme
-# Designed for any resolution
+# GRUB2 gfxmenu grubdz styled theme.
+# Designed for 1024x768 resolution.
+#
+# Forked from DuZeru by Claudio Silva <claudiosilva@duzeru.org>
+#
+# Changed by Andreas Kainz
+#
+# This program is free software: you can resitribute it and/or modify
+# it under the terms of the gNU General Publoc License as published by
+# the Free Software Foundation, version 3.
+
 
 # Global Property
 title-text: ""
-desktop-image: "../splash.png"
+title-font: "Noto Sans Regular 12"
+title-color: "#000000"
+message-font: "Noto Sans Regular 14"
+message-color: "#FFFFFF"
+message-bg-color: "#f6f6f6"
+desktop-image: "background.png"
 desktop-color: "#000000"
-terminal-font: "Unifont Regular 16"
-terminal-box: "terminal_box_*.png"
-terminal-left: "0"
-terminal-top: "0"
-terminal-width: "100%"
-terminal-height: "100%"
-terminal-border: "0"
+terminal-box: "menu_bkg_*.png"
+terminal-font: "DejaVu Mono 14"
 
-# Show the boot menu
-+ boot_menu {
-  left = 15%
-  top = 20%
-  width = 70%
-  height = 60%
-  item_font = "Unifont Regular 16"
-  item_color = "#cccccc"
-  selected_item_color = "#0099ff"
-  item_height = 24
-  item_spacing = 12
-  selected_item_pixmap_style = "select_*.png"
+# Titulo
++ hbox {
+		top = 25 #48
+		left = 40% #50%-182
+		width = 366
+		+ label {text = "Menu OS" color= "#f2f2f2" font = "Noto Sans Regular 32" align = "center"}
 }
 
-# Show a countdown message using the label component
-+ label {
-  top = 82%
-  left = 35%
-  width = 30%
-  align = "center"
-  id = "__timeout__"
-  text = "Booting in %d seconds"
-  color = "#a34545"
-  font = "Unifont Regular 16"
+# Mostrar o menu de inicialização
++ boot_menu {
+		top = 29%
+		left = 50%-275
+		width = 550
+		height = 42%
+		item_font = "Noto Sans Regular 12"
+		selected_item_font = "Noto Sans Bold 14"
+		item_color = "#f2f2f2"
+		selected_item_color = "#f2f2f2"
+		item_height = 64
+		item_padding = 15
+		item_spacing = 5
+		icon_width = 64
+		icon_height = 64
+		item_icon_space = 20
+		selected_item_pixmap_style= "select_bkg_*.png"
+		menu_pixmap_style = "menu_bkg_*.png"
+		scrollbar = true
+		scrollbar_width = 24
+		scrollbar_thumb = ""
+		scrollbar_frame = ""
+}
+
+# mostrar uma barra horizontal de progress bar
++ progress_bar {
+		id = "__timeout__"
+		top = 72%
+		left = 50%-134
+		width = 268
+		height = 24
+		show_text = false
+		font = "Noto Sans Regular 10"
+		text_color = "#f2f2f2"
+		text = ""
+		bar_style = "progress_bar_*.png"
+		highlight_style = "progress_highlight_*.png"
+}
+
+# Mostrar um texto de progress bar
++ progress_bar {
+		id = "__timeout__"
+		top = 75%
+		left = 50%-174
+		height = 24
+		show_text = true
+		font = "Noto Sans Regular 10"
+		text_color = "#f2f2f2"
+		align = "center"
+		text = "@TIMEOUT_NOTIFICATION_LONG@"
+		bar_style = "progress_bar2_*.png"
+}
+
+# Mostrar a mensagem de informacao do rodape.
++ hbox {
+		top = 100%-27
+		left = 50%-182
+		+ label {text = "Enter: " font = "Noto Sans Regular 12" color = "#31363b" align = "center"}
+		+ label {text = "Boot Selection     " font = "Noto Sans Regular 12" color = "#31363b" align = "center"}
+		+ label {text = "E: " font = "Noto Sans Regular 12" color = "#31363b" align = "center"}
+		+ label {text = "Edit Selection     " font = "Noto Sans Regular 12" color = "#31363b" align = "center"}
+		+ label {text = "C: " font = "Noto Sans Regular 12" color = "#31363b" align = "center"}
+		+ label {text = "GRUB Commandline" font = "Noto Sans Regular 12" color = "#31363b" align = "center"}
 }
