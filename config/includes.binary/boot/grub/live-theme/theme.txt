@@ -31,27 +31,41 @@ terminal-font: "DejaVu Mono 14"
 }
 
 # Mostrar o menu de inicialização
+#+ boot_menu {
+#		top = 29%
+#		left = 50%-275
+#		width = 550
+#		height = 42%
+#		item_font = "Noto Sans Regular 12"
+#		selected_item_font = "Noto Sans Bold 14"
+#		item_color = "#f2f2f2"
+#		selected_item_color = "#f2f2f2"
+#		item_height = 64
+#		item_padding = 15
+#		item_spacing = 5
+#		icon_width = 64
+#		icon_height = 64
+#		item_icon_space = 20
+#		selected_item_pixmap_style= "select_bkg_*.png"
+#		menu_pixmap_style = "menu_bkg_*.png"
+#		scrollbar = true
+#		scrollbar_width = 24
+#		scrollbar_thumb = ""
+#		scrollbar_frame = ""
+#}
+
+# Show the boot menu
 + boot_menu {
-		top = 29%
-		left = 50%-275
-		width = 550
-		height = 42%
-		item_font = "Noto Sans Regular 12"
-		selected_item_font = "Noto Sans Bold 14"
-		item_color = "#f2f2f2"
-		selected_item_color = "#f2f2f2"
-		item_height = 64
-		item_padding = 15
-		item_spacing = 5
-		icon_width = 64
-		icon_height = 64
-		item_icon_space = 20
-		selected_item_pixmap_style= "select_bkg_*.png"
-		menu_pixmap_style = "menu_bkg_*.png"
-		scrollbar = true
-		scrollbar_width = 24
-		scrollbar_thumb = ""
-		scrollbar_frame = ""
+  left = 15%
+  top = 20%
+  width = 70%
+  height = 60%
+  item_font = "Unifont Regular 16"
+  item_color = "#cccccc"
+  selected_item_color = "#0099ff"
+  item_height = 24
+  item_spacing = 12
+  selected_item_pixmap_style = "select_*.png"
 }
 
 # mostrar uma barra horizontal de progress bar

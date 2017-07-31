@@ -1,8 +1,13 @@
 grub-efi-amd64
 debian-installer-launcher
 mate-terminal
+dzsh
+duzeru-wallpaper
+tilix
+duzeru-controlcenter
+duzeru-lightdm
+duzeru-icon
 gdebi
-mate-calc
 caja
 caja-open-terminal
 caja-gksu
@@ -14,3 +19,6 @@ base-files
 file-roller
 lsb-release
 grubdz
+google-chrome-stable
+network-manager
+network-manager-gnome
