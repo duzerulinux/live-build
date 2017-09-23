@@ -1,0 +1,11 @@
+cd live
+lb config --debian-installer-gui true
+lb config --debian-installer live
+echo xfce4 > config/package-lists/desktop.list.chroot
+lb config --image-name dz3
+lb config --iso-application "duzerulinux"
+lb config --iso-volume "duzerulinux"
+lb config --interactive shell
+lb config --archive-areas
+lb config --bootappend-live "boot=live components username=dzlive"
+touch config/package-lists/xfce.list.chroot
