@@ -10,6 +10,8 @@ lb config --archive-areas
 lb config --bootappend-live "boot=live components username=dzlive"
 touch config/package-lists/xfce.list.chroot
 
+#ACRESCENTAR SOURCESLIST CALAMARES E DUZERU EM config/archives
+
 #Packages list Xfce4
 echo xcfe4 > config/package-lists/xfce.list.chroot
 echo xfce4-whiskermenu-plugin >> config/package-lists/xfce.list.chroot
