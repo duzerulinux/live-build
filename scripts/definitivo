@@ -27,3 +27,34 @@ echo xfce4-sensors-plugin >> config/package-lists/xfce.list.chroot
 echo xfce-theme-manager >> config/package-lists/xfce.list.chroot
 echo xfpanel-switch >> config/package-lists/xfce.list.chroot
 echo xfwm4-composite-editor >> config/package-lists/xfce.list.chroot
+
+# PACKAGES VARIOUS
+#echo grub-efi-amd64 >> config/package-lists/various.list.chroot
+echo debian-installer-launcher >> config/package-lists/various.list.chroot
+echo mate-terminal >> config/package-lists/various.list.chroot
+echo gdebi >> config/package-lists/various.list.chroot
+echo caja >> config/package-lists/various.list.chroot
+echo caja-open-terminal >> config/package-lists/various.list.chroot
+echo caja-gksu >> config/package-lists/various.list.chroot
+echo file-roller >> config/package-lists/various.list.chroot
+echo lsb-release  >> config/package-lists/various.list.chroot
+echo network-manager >> config/package-lists/various.list.chroot
+echo network-manager-gnome >> config/package-lists/various.list.chroot
+
+#REQUER SOURCES.LIST DUZERU
+echo dzsh >> config/package-lists/duzerupack.list.chroot
+echo duzeru-wallpaper >> config/package-lists/duzerupack.list.chroot
+echo duzeru-controlcenter >> config/package-lists/duzerupack.list.chroot
+echo duzeru-lightdm >> config/package-lists/duzerupack.list.chroot
+echo duzeru-icon >> config/package-lists/duzerupack.list.chroot
+echo duzeru-theme-gtk >> config/package-lists/duzerupack.list.chroot
+echo desktop-base >> config/package-lists/duzerupack.list.chroot
+echo base-files >> config/package-lists/duzerupack.list.chroot
+echo grubdz >> config/package-lists/duzerupack.list.chroot
+echo google-chrome-stable >> config/package-lists/duzerupack.list.chroot
+
+
+#CALAMARES INSTALLER
+# Requer sources.list calamares
+echo calamares >> config/package-lists/calamares.list.chroot
+echo calamares-desktop >> config/package-lists/calamares.list.chroot
