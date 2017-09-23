@@ -9,3 +9,21 @@ lb config --interactive shell
 lb config --archive-areas
 lb config --bootappend-live "boot=live components username=dzlive"
 touch config/package-lists/xfce.list.chroot
+
+#Packages list Xfce4
+echo xcfe4 > config/package-lists/xfce.list.chroot
+echo xcfe4 >> xfce4-whiskermenu-plugin
+echo xcfe4 >> xfce4-indicator-plugin
+echo xcfe4 >> xfce4-power-manager
+echo xcfe4 >> xfce4-battery-plugin
+echo xcfe4 >> xfce4-datetime-plugin
+echo xcfe4 >> xfce4-mount-plugin
+echo xcfe4 >> xfce4-netload-plugin
+echo xcfe4 >> xfce4-smartbookmark-plugin
+echo xcfe4 >> xfce4-timer-plugin
+echo xcfe4 >> xfce4-wavelan-plugin
+echo xcfe4 >> xfce4-screenshooter
+echo xcfe4 >> xfce4-sensors-plugin
+echo xcfe4 >> xfce-theme-manager
+echo xcfe4 >> xfpanel-switch
+xfwm4-composite-editor
