@@ -115,3 +115,4 @@ echo echo gstreamer1.0-plugins-bad >> config/package-lists/firmwares.list.chroot
 echo echo libgstreamer-plugins-bad0.10-0 >> config/package-lists/firmwares.list.chroot
 echo echo libflac++6 >> config/package-lists/firmwares.list.chroot
 echo echo libflac8 echo libfaad2 >> config/package-lists/firmwares.list.chroot
+#
