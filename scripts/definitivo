@@ -45,6 +45,7 @@ echo network-manager-gnome >> config/package-lists/various.list.chroot
 
 #REQUER SOURCES.LIST DUZERU
 echo dzsh >> config/package-lists/duzerupack.list.chroot
+echo duzeru-kernel >> config/package-lists/duzerupack.list.chroot
 echo duzeru-wallpaper >> config/package-lists/duzerupack.list.chroot
 echo duzeru-controlcenter >> config/package-lists/duzerupack.list.chroot
 echo duzeru-lightdm >> config/package-lists/duzerupack.list.chroot
