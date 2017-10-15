@@ -65,58 +65,58 @@ calamares
 calamares-desktop
 
 #FIRMWARES
-echo firware-linux-free >> config/package-lists/firmwares.list.chroot
-echo firmware-linux-nonfree >> config/package-lists/firmwares.list.chroot
-#non-free >> config/package-lists/firmwares.list.chroot
-echo firmware-atheros >> config/package-lists/firmwares.list.chroot
-echo firmware-bnx2 >> config/package-lists/firmwares.list.chroot
-echo firmware-bnx2x >> config/package-lists/firmwares.list.chroot
-echo firmware-brcm80211 >> config/package-lists/firmwares.list.chroot
-echo firmware-b43-installer >> config/package-lists/firmwares.list.chroot
-echo firmware-crystalhd >> config/package-lists/firmwares.list.chroot
-echo firmware-intelwimax >> config/package-lists/firmwares.list.chroot
-echo firmware-ipw2x00 >> config/package-lists/firmwares.list.chroot
-echo firmware-iwlwifi >> config/package-lists/firmwares.list.chroot
-echo firmware-libertas >> config/package-lists/firmwares.list.chroot
-echo libertas-firmware >> config/package-lists/firmwares.list.chroot
-echo firmware-myricom >> config/package-lists/firmwares.list.chroot
-echo firmware-netxen >> config/package-lists/firmwares.list.chroot
-echo firmware-ralink >> config/package-lists/firmwares.list.chroot
-echo firmware-realtek >> config/package-lists/firmwares.list.chroot
-echo firmware-samsung >> config/package-lists/firmwares.list.chroot
-echo firmware-ti-connectivity >> config/package-lists/firmwares.list.chroot
-echo firmware-zd1211 >> config/package-lists/firmwares.list.chroot
-echo madfuload >> config/package-lists/firmwares.list.chroot
-echo midisport-firmware >> config/package-lists/firmwares.list.chroot
-echo atmel-firmware >> config/package-lists/firmwares.list.chroot
-echo bluez-firmware >> config/package-lists/firmwares.list.chroot
-echo firmware-adi >> config/package-lists/firmwares.list.chroot
-echo firmware-qlogic >> config/package-lists/firmwares.list.chroot
-echo linux-wlan-ng >> config/package-lists/firmwares.list.chroot
+firware-linux-free
+firmware-linux-nonfree
+firmware-atheros
+efirmware-bnx2
+firmware-bnx2x
+firmware-brcm80211
+firmware-b43-installer
+firmware-crystalhd
+firmware-intelwimax
+firmware-ipw2x00 >> config/package-lists/firmwares.list.chroot
+firmware-iwlwifi >> config/package-lists/firmwares.list.chroot
+firmware-libertas >> config/package-lists/firmwares.list.chroot
+libertas-firmware >> config/package-lists/firmwares.list.chroot
+firmware-myricom >> config/package-lists/firmwares.list.chroot
+firmware-netxen >> config/package-lists/firmwares.list.chroot
+firmware-ralink >> config/package-lists/firmwares.list.chroot
+firmware-realtek >> config/package-lists/firmwares.list.chroot
+firmware-samsung >> config/package-lists/firmwares.list.chroot
+firmware-ti-connectivity >> config/package-lists/firmwares.list.chroot
+firmware-zd1211 >> config/package-lists/firmwares.list.chroot
+madfuload >> config/package-lists/firmwares.list.chroot
+midisport-firmware >> config/package-lists/firmwares.list.chroot
+atmel-firmware >> config/package-lists/firmwares.list.chroot
+bluez-firmware >> config/package-lists/firmwares.list.chroot
+firmware-adi >> config/package-lists/firmwares.list.chroot
+firmware-qlogic >> config/package-lists/firmwares.list.chroot
+linux-wlan-ng >> config/package-lists/firmwares.list.chroot
 
 #Libs audio
-echo libgstreamer-perl >> config/package-lists/firmwares.list.chroot
-echo libfaac0 >> config/package-lists/firmwares.list.chroot
-echo libasound2-plugins >> config/package-lists/firmwares.list.chroot
-echo libiec61883-0 >> config/package-lists/firmwares.list.chroot
-echo libwavpack1 >> config/package-lists/firmwares.list.chroot
-echo libcdparanoia0 >> config/package-lists/firmwares.list.chroot
-echo libchromaprint0 >> config/package-lists/firmwares.list.chroot
-echo libtagc0 >> config/package-lists/firmwares.list.chroot
-echo libtag1c2a >> config/package-lists/firmwares.list.chroot
-echo libsamplerate0 >> config/package-lists/firmwares.list.chroot
-echo libfarstream-0.1-0 >> config/package-lists/firmwares.list.chroot
-echo libvisual-0.4-0 >> config/package-lists/firmwares.list.chroot
-echo libvisual-0.4-plugins >> config/package-lists/firmwares.list.chroot
-echo pulseaudio-modules-x11 >> config/package-lists/firmwares.list.chroot
-echo libcaca0 >> config/package-lists/firmwares.list.chroot
-echo gstreamer0.10-fluendo-mp3 >> config/package-lists/firmwares.list.chroot
-echo sgstreamer0.10-plugins-bad >> config/package-lists/firmwares.list.chroot
-echo gstreamer0.10-plugins-good >> config/package-lists/firmwares.list.chroot
-echo gstreamer1.0-crystalhd >> config/package-lists/firmwares.list.chroot
-echo gstreamer1.0-fluendo-mp3 >> config/package-lists/firmwares.list.chroot
-echo echo gstreamer1.0-plugins-bad >> config/package-lists/firmwares.list.chroot
-echo echo libgstreamer-plugins-bad0.10-0 >> config/package-lists/firmwares.list.chroot
-echo echo libflac++6 >> config/package-lists/firmwares.list.chroot
-echo echo libflac8 echo libfaad2 >> config/package-lists/firmwares.list.chroot
+libgstreamer-perl >> config/package-lists/firmwares.list.chroot
+libfaac0 >> config/package-lists/firmwares.list.chroot
+libasound2-plugins >> config/package-lists/firmwares.list.chroot
+libiec61883-0 >> config/package-lists/firmwares.list.chroot
+libwavpack1 >> config/package-lists/firmwares.list.chroot
+libcdparanoia0 >> config/package-lists/firmwares.list.chroot
+libchromaprint0 >> config/package-lists/firmwares.list.chroot
+libtagc0 >> config/package-lists/firmwares.list.chroot
+libtag1c2a >> config/package-lists/firmwares.list.chroot
+libsamplerate0 >> config/package-lists/firmwares.list.chroot
+libfarstream-0.1-0 >> config/package-lists/firmwares.list.chroot
+libvisual-0.4-0 >> config/package-lists/firmwares.list.chroot
+libvisual-0.4-plugins >> config/package-lists/firmwares.list.chroot
+pulseaudio-modules-x11 >> config/package-lists/firmwares.list.chroot
+libcaca0 >> config/package-lists/firmwares.list.chroot
+gstreamer0.10-fluendo-mp3 >> config/package-lists/firmwares.list.chroot
+sgstreamer0.10-plugins-bad >> config/package-lists/firmwares.list.chroot
+gstreamer0.10-plugins-good >> config/package-lists/firmwares.list.chroot
+gstreamer1.0-crystalhd >> config/package-lists/firmwares.list.chroot
+gstreamer1.0-fluendo-mp3 >> config/package-lists/firmwares.list.chroot
+gstreamer1.0-plugins-bad >> config/package-lists/firmwares.list.chroot
+libgstreamer-plugins-bad0.10-0 >> config/package-lists/firmwares.list.chroot
+libflac++6
+libflac8
+ibfaad2
 #
