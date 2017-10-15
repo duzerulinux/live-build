@@ -13,22 +13,21 @@ touch config/package-lists/xfce.list.chroot
 #ACRESCENTAR SOURCESLIST CALAMARES E DUZERU EM config/archives
 
 #Packages list Xfce4
-echo xcfe4 > config/package-lists/xfce.list.chroot
-echo xfce4-whiskermenu-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-indicator-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-power-manager >> config/package-lists/xfce.list.chroot
-echo xfce4-battery-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-datetime-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-mount-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-netload-plugin >> config/package-lists/xfce.list.chroot
-echo xcfe4 >>xfce4-smartbookmark-plugin >> config/package-lists/xfce.list.chroot
-echo xcfe4 >> xfce4-timer-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-wavelan-plugin >> config/package-lists/xfce.list.chroot
-echo xfce4-screenshooter >> config/package-lists/xfce.list.chroot
-echo xfce4-sensors-plugin >> config/package-lists/xfce.list.chroot
-echo xfce-theme-manager >> config/package-lists/xfce.list.chroot
-echo xfpanel-switch >> config/package-lists/xfce.list.chroot
-echo xfwm4-composite-editor >> config/package-lists/xfce.list.chroot
+xfce4
+xfce4-whiskermenu-plugin
+xfce4-indicator-plugin
+xfce4-power-manager
+xfce4-battery-plugin
+xfce4-datetime-plugin
+xfce4-mount-plugin
+xfce4-netload-plugin
+xfce4-wavelan-plugin
+xfce4-screenshooter
+xfce4-sensors-plugin
+xfce4-smartbookmark-plugin
+xfce-theme-manager
+xfpanel-switch
+xfwm4-composite-editor
 
 # PACKAGES VARIOUS
 #echo grub-efi-amd64 >> config/package-lists/various.list.chroot
