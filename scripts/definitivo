@@ -92,6 +92,8 @@ bluez-firmware
 firmware-adi
 firmware-qlogic
 linux-wlan-ng
+firmware-misc-nonfree
+libcrystalhd3
 
 #Libs audio
 libgstreamer-perl
