@@ -64,7 +64,7 @@ google-chrome-stable
 calamares
 calamares-desktop
 
-lb config --archive-areas "main contrib non-free" # → habilita os componentes
+lb config --archive-areas "main contrib non-free"
 
 #FIRMWARES
 firmware-linux-free
