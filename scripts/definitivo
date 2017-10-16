@@ -94,6 +94,13 @@ firmware-qlogic
 linux-wlan-ng
 firmware-misc-nonfree
 libcrystalhd3
+wmaloader
+firmware-libertas
+firmware-cavium
+firmware-intel-sound
+firmware-intelwimax
+firmware-ipw2x00
+firmware-netxen
 
 #Libs audio
 libgstreamer-perl
