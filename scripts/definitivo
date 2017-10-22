@@ -10,6 +10,10 @@ lb config --archive-areas
 lb config --bootappend-live "boot=live components username=dzlive"
 touch config/package-lists/xfce.list.chroot
 
+#AVANÇADOS
+echo “d-i grub-installer/only_debian boolean true” >> config/includes.installer/preseed.cfg
+#→ Faz o grub instalar automaticamente se nenhum outro sistema operacional for detectado na máquina.
+
 #ACRESCENTAR SOURCESLIST CALAMARES E DUZERU EM config/archives
 
 #Packages list Xfce4
