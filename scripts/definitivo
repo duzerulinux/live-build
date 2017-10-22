@@ -45,6 +45,8 @@ file-roller
 lsb-release
 network-manager
 network-manager-gnome
+build-essential
+module-assistant
 
 #REQUER SOURCES.LIST DUZERU
 dzsh
@@ -58,6 +60,9 @@ desktop-base
 base-files
 grubdz
 google-chrome-stable
+kwin-xfce
+duzeru-icon
+adapta-theme
 
 #CALAMARES INSTALLER
 # Requer sources.list calamares
