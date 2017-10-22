@@ -10,10 +10,6 @@ lb config --archive-areas
 lb config --bootappend-live "boot=live components username=dzlive"
 touch config/package-lists/xfce.list.chroot
 
-#para a imagem do GRUB MBR criar um diretório:
-#config/includes.binary/isolinux
-#copiar a mesma coisa que o GRUB EFI com o diretorio boot/grub/
-
 #ACRESCENTAR SOURCESLIST CALAMARES E DUZERU EM config/archives
 
 #Packages list Xfce4
@@ -127,3 +123,24 @@ bluez-firmware
 #firmware-intelwimax
 #linux-wlan-ng
 #atmel-firmware
+
+################## GRUB ################################
+
+#para a imagem do GRUB MBR criar um diretório:
+#config/includes.binary/isolinux
+#copiar a mesma coisa que o GRUB EFI com o diretorio boot/grub/
+
+#acrescentar no grub MBR o seguinte label em português; Caminho: config/includes.binary/isolinux/live.cfg
+#label live-amd64
+#	menu label ^Live Portugues(amd64)
+#	menu default
+#	linux /live/vmlinuz
+#	initrd /live/initrd.img
+#	append boot=live components username=dzlive locales=pt_BR.UTF-8 keyboard-layouts=br
+
+#Acrescentar no GRUB EFI o seguinte label em português; caminho: config/includes.binary/boot/grub/grub.cfg
+# You can add more entries like this
+# menuentry "Iniciar live em Portugues" {
+# linux /live/vmlinuz-4.9.0-3-amd64 boot=live components username=dzlive locales=pt_BR.UTF-8 keyboard-layouts=br
+# initrd /live/initrd.img-4.9.0-3-amd64
+# }
