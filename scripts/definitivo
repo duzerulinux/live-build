@@ -144,8 +144,8 @@ bluez-firmware
 #	append boot=live components username=dzlive locales=pt_BR.UTF-8 keyboard-layouts=br
 
 #Acrescentar no GRUB EFI o seguinte label em português; caminho: config/includes.binary/boot/grub/grub.cfg
-# You can add more entries like this
-# menuentry "Iniciar live em Portugues" {
-# linux /live/vmlinuz-4.9.0-3-amd64 boot=live components username=dzlive locales=pt_BR.UTF-8 keyboard-layouts=br
-# initrd /live/initrd.img-4.9.0-3-amd64
-# }
+# Live boot
+#menuentry "Live system portuges" {
+#	linux	/live/vmlinuz-4.9.0-4-amd64 boot=live components username=dzlive locales=pt_BR.UTF-8 keyboard-layouts=br
+#	initrd	/live/initrd.img-4.9.0-4-amd64
+#}
