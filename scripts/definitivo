@@ -47,7 +47,8 @@ network-manager
 network-manager-gnome
 build-essential
 module-assistant
-pluma
+nano
+vlc
 
 #REQUER SOURCES.LIST DUZERU
 dzsh
