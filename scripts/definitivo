@@ -49,6 +49,8 @@ build-essential
 module-assistant
 nano
 vlc
+mugshot
+ristretto
 
 #REQUER SOURCES.LIST DUZERU
 dzsh
